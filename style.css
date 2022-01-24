@@ -13,15 +13,15 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #F2F2F2;
+    color:#656565;
 }
 
 #nav-container {
     background-color: #FCFCFC;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     display: flex;
-    justify-content: center;
-    gap: 8rem;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 1rem 3rem;
 }
 
 .nav-item {
@@ -31,6 +31,7 @@ body {
 .nav-link {
     text-decoration: none;
     color: #656565;
+    transition: all 0.3s ease 0s;
 }
 
 .nav-list {
@@ -42,33 +43,123 @@ body {
     align-items: center;
     gap: 6.875rem;
     padding: 0.5rem;
-    transition: all 0.3s ease 0s;
 }
 
 .nav-link:hover {
     color:#adadad;
+    transform: scale(1.5);
+}
+
+.logo-header {
+    transform: scale(0.75);
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: min(90%, 70.35rem;)
+}
+
+.font-heading {
+    font-size: 1.5rem;
 }
 
 #welcome-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     justify-content: center;
-    padding-top: 2.3rem;
     gap: 2.3rem;
     color: #656565;
     font-weight: 500;
-    padding-bottom: 7.125rem;
 }
 
-#introduction {
+#welcome-section >p {
     text-align: center;
     width: 31vw;
-    margin-bottom: 20.875rem;
+    font-weight: 400;
+}
+
+#projects {
+    height: 100vh;
+    width: min(80%, 60rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#project-tile {
+    display: flex;
+    gap: 1.5625rem;
+    padding-top: 1.4375rem;
+}
+
+.project-desc {
+    text-align: center;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: #4D5EFF;
+    border-radius: 10px;
+    color: #FCFCFC;
+    font-size: 1.25rem;
+}
+
+#designs {
+    height: 100vh;
+    width: min(80%, 60rem);
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.design-tile {
+    display: flex;
+    gap: 1.5625rem;
+    padding-top: 1.4375rem;
+}
+
+.design-desc {
+    text-align: center;
+}
+
+#contacts {
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-container {
+    background-color: #656565;
+    color: #FCFCFC;
+    height: 50vh;
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#contact-list {
+    display: flex;
+}
+
+.contact-items {
+    list-style: none;
+}
+
+.contact-link {
+    text-decoration: none;
 }
