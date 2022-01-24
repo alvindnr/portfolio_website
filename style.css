@@ -177,3 +177,16 @@ main {
 .contact-link >img:hover {
     transform: scale(1.15);
 }
+
+#credits {
+    background-color: #414040;
+    width: 100%;
+    max-width: 100%;
+    color: #FCFCFC;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
