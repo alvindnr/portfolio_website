@@ -149,17 +149,31 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
+}
+
+.contact-header {
+    font-weight: 400;
 }
 
 #contact-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.625rem;
+    padding-bottom: 2.1rem;
 }
 
 .contact-items {
     list-style: none;
+    transform: scale(0.8);
 }
 
-.contact-link {
+.contact-link >img {
     text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-link >img:hover {
+    transform: scale(1.15);
 }
